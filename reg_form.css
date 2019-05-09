@@ -1,0 +1,169 @@
+
+body{    
+    background-image: url(./images.JPEG);
+    background-color: aquamarine;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body label{
+    font-family:  Arial, Helvetica, sans-serif ;
+    font-size: 16px;
+}
+.policy label{
+    
+    
+}
+
+form
+{
+    width: 100%;
+   
+    line-height: 40px;
+}
+.driver label{
+    padding: 20px;
+      
+}
+
+table, th, td {
+    
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+table{
+    width: 100%;
+}
+th, td {
+    padding: 5px;
+    text-align: left;  
+    text-align: center;
+    width: 100px;
+    height: 25px;  
+}
+#sno
+{
+    width: 3px;
+}
+.bank{
+    margin: 0 0 2em 0;
+}
+.details {
+    line-height: 0.5;
+    text-align: center;
+    padding:0px;
+}
+.details span{
+    display: inline-block;
+     position: relative;  
+
+}
+.details span::before,
+.details span::after{
+    content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 3px solid black;
+  /*border-top: 1px solid red;*/
+  top: 20px;
+  width: 580px;
+}
+.details span:before {
+    right: 100%;
+    margin-right: 10px;
+  }
+.details span:after {
+    left: 100%;
+    margin-left:10px;
+  }
+.bank_1 label{
+    padding: 10px;
+    line-height: 2em;
+} 
+.cheque h4{
+    line-height: 0.5;
+    text-align: center;
+    display: inline-block;
+    position: relative; 
+}
+.cheque h4::before,
+.cheque h4::after{
+    content: "";
+  position: absolute;
+  height: 2px;
+  border-bottom: 3px solid black;
+  /*border-top: 1px solid red;*/
+  top: 0px;
+  width: 380px;
+}
+.cheque h4:before {
+    right: 100%;
+    margin-right: 5px;
+  }
+.cheque h4:after {
+    left: 100%;
+    margin-left:10px;
+  }
+  
+.cheque_1 insured{   
+    text-align: left;
+}
+.CLAIMDISCHARGE h3{
+    text-align: center;
+    
+}
+.CLAIMDISCHARGE 
+{
+
+   
+}
+.vehicle discharge
+{
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.bankdetails{
+    text-align: center;
+    margin-left: 5px;
+    position: relative;
+    width: 93%;
+}
+h4:after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: #242424;
+    width: 30%;
+    margin-left: 15px;
+    top: 5%;
+    }
+*/

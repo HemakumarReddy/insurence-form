@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="reg_form.css">
+    
+</head>
+<body>
+    <!--Details of Policy Holder-->
+    <div class="policy">
+        <fieldset>
+            <legend><h2>Details of Policy Holder</h2></legend> 
+            <form action="">                    
+                <label for=""> Policy No/Cover Note :</label>   <input type="text">       
+                <label>Claim No :</label>  <input type="text" name="" id=""> 
+                <label>Period of Insurance : From </label><input type="date"> To : <input type="date"><br>
+                <label for="">Name of the Insured :</label>  <input type="text">
+                <label>Phone Number (Home/Office) :</label> <input type="phone"> Mobile: <input type="text">    <br>                
+                <label> Name of  Registered Owner : </label> <input type="text">
+                <label>Current Address :</label> <input type="text"> <label for="">Email</label> <input type="email" name="" id=""> <br>
+                <label>Gender: </label><input type="radio" name="gender" id=""> Male <input type="radio" name="gender" id=""> Female
+                <label>Date of Birth: </label><input type="date" name="dob" id="dob">
+            </form>         
+        </fieldset>
+    </div>
+    <!--Details of Policy Holder End -->
+
+    <!-- Detais of Incident -->
+    <div class="incident">
+        <fieldset>
+            <legend> <h2>Detais of Incident (Accident/Theft)</h2></legend>
+            <form action="">
+                <label>Date:</label>  <input type="date" name="incident_date" id="">
+                <label>Time:</label> <input type="time" name="incident_time" id="">
+                <label>Speed (km/hr) :</label> <input type="range" name="time_speed" id="">
+                <label>Exact Plae Where incident occurred:</label> <input type="text" name="" id="">
+                <label>Place to which the vehicle was heading for before incident:</label> <input type="text" name="" id="">
+                <label>Purpose for which vehicle was being used/parked at the time of incident:</label> <input type="text" name="" id=""> 
+                <label>Nature & Weight of goods carried at the time of incident (Comm. Veh):</label> <input type="text" name="" id="">
+                <label>No of people travelling at time of incident : </label><input type="number" name="" id="  "> 
+                <label>Is it reported to the Police ? :</label> <input type="radio" name="report" id=""> Yes <input type="radio" name="report" id=""> No <br>
+                <label>Gen. Diary/Crime No/FIR No :</label> <input type="text" name="fir" id=""> FIR Date.<input type="date" name="" id="">
+                <label>Name and Address of the place where Insured vehicle is parked:</label> <input type="text" name="parking" id=""><br>
+                <label>Estimated Loss Amount (Rs.) :</label> <input type="text" name="paidamount" id="">
+            </form>
+        </fieldset>
+    </div>
+    <!-- Detais of Incident End -->
+
+    <!-- Details of Vehicle -->
+    <div class="vehicle">
+        <fieldset>
+        <legend> <h2>Details of Vehicle</h2></legend>
+        <form action="">
+        <label>Registration No :</label> <input type="text" name="" id="">
+        <label>Make : </label> <select name="vehicle" id="">
+            <option value="">vehicle maker</option>
+            <option value="">Maruti Suzuki</option>
+            <option value="">Honda</option>
+            <option value="">Mahindra & Mahindra</option>
+            <option value="">Tata Motos</option>
+            <option value="">Toyota</option>
+            <option value="">Hyundai</option>
+            <option value="">Datsun</option>
+            <option value="">Ford</option>
+        </select>
+       <label>Model :</label> <select name="model" id="">
+            <option value="">Model</option>
+            <option value="">Alto 800</option>
+            <option value="">Wagon R</option>
+            <option value="">Swift</option>            
+            <option value="">Dzire</option>
+            <option value="">Ciaz</option>
+            <option value="">Celerio</option>
+            <option value="">Vitara Brezza LDI</option>            
+            <option value="">Ertiga LDI</option>
+            <option value="">Baleno</option>
+            <option value="">S-Cross Sigma</option>            
+        </select><br>
+        <label> Name of Financier (if any):</label> <input type="text" name="vehiclefinancier" id="Financier"> 
+        <label>Colour of Vehicle :</label> <input type="text" name="vehicle_color" id="vehicle_color"><br>
+        <label>Type of Fuel :</label> <input type="radio" name="vehicle_fuel" id="">AGS/LPG
+                     <input type="radio" name="vehicle_fuel" id="">Petrol
+                     <input type="radio" name="vehicle_fuel" id="">Diesel
+                     <input type="radio" name="vehicle_fuel" id="">Eletric
+        <label>Chassis No.:</label> <input type="text" name="vehicle_chassis" id="vehicle_chassis.no">
+        <label>Engine No.:</label> <input type="text" name="vehicle_engine" id="vehicle_engine.no">        
+        </form>
+    </fieldset>
+    </div>
+    <!-- Details of Vehicle End -->
+
+    <!-- Details of Driver -->
+
+    <div class="driver">
+        <fieldset>
+            <legend><h2>Details of Driver</h2></legend>
+            <form action="">
+                    <label> Name :</label> <input type="text" name="driver" id="driver_details">
+                    <label> Relation with Insured : </label><input type="text" name="" id=""><br>
+                    <label>Address :</label> <input type="text" name="" id="">
+                    <label>Contact Number :</label> <input type="number" name="" id=""><br>
+                    <label>Gender : </label><input type="radio" name="driver_gender" id=""> Male <input type="radio" name="driver_gender" id=""> Female
+                    <label>Driving License No :</label> <input type="text" name="LicenseNo" id="">
+                    <label>Issuing RTO : </label><input type="text" name="" id=""><br>
+                    <label>License Expiry Date :</label> <input type="date" name="" id=""> <br>
+                    <label>Class :</label> <input type="checkbox" name="class_vehicle" id="">Mcycle
+                                            <input type="checkbox" name="class_vehicle" id="">LMV
+                                            <input type="checkbox" name="class_vehicle" id="">HGV
+                                            <input type="checkbox" name="class_vehicle" id="">Transport
+                                            <input type="checkbox" name="class_vehicle" id="">Non-Transport
+                    <label class="type">Type:</label> <input type="radio" name="license_type" id="">Permanent <input type="radio" name="license_type" id="">Learners
+                    
+            </form>
+        </fieldset>
+    </div>
+    <!-- Details of Driver End-->
+
+    <!-- Please describe how the incident occurred-->
+    <div class="incident_occurred">
+        <fieldset>
+            <legend><h2>Please describe how the incident occurred</h2></legend>
+            <form action="">
+                <textarea name="incident" id="" cols="180" rows="10"></textarea>
+            </form>
+        </fieldset>
+    </div>
+    <!-- Please describe how the incident occurred End-->
+
+    <!-- Details of Occupant /Passenger/Third Party/Property Injury-->
+    <div class="property">
+        <fieldset>
+            <legend><h2>Details of Occupant /Passenger/Third Party/Property Injury</h2></legend>
+            <div class="Property_injury">
+                <h3>Injury/Death Details:</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>S.NO</th>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Phone No</th>
+                            <th>In What Capacity</th>
+                            <th>Nature of Injury</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                            <td><input type="text" name="" id=""></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> 
+
+            <h2>b) Third Party Vehicle/Property Details:</h2>
+            <textarea name="" id="" cols="180" rows="5"></textarea>
+        </fieldset>        
+    </div>
+    <!-- Details of Occupant /Passenger/Third Party/Property Injury End-->
+
+    <!-- Other Insurance-->
+    <div class="insurance">
+        <fieldset>
+            <legend><h2>Other Insurance</h2></legend>
+            <p>Detail of other insurance policies indemnifying you or the driver in respect of above accident:</p>
+            <textarea name="" id="" cols="180" rows="3"></textarea>
+        </fieldset>
+    </div>
+    <!-- Other Insurance End -->
+    <!-- Past Claim History -->
+    <div class="history">
+        <fieldset>
+            <legend><h2>Past Claim History</h2></legend>
+            <p>Was any claim reported in the past on the same vehicle during current year policy ?</p>
+            <textarea name="" id="" cols="180" rows="3"></textarea>
+        </fieldset>
+    </div>
+    <!-- Past Claim History End -->
+
+    <!-- NCB Claimed -->
+    <div class="claimed">
+        <fieldset>
+            <legend><h2>NCB Claimed</h2></legend>
+            <table>
+                    <thead>
+                        <tr>
+                            <th>Policy Details</th>
+                            <th>Policy No</th>
+                            <th>Policy Inception</th>
+                            <th>Policy Expiry</th>
+                            <th>Name of the Insure</th>
+                            <th>Percentage(%) of NCB Claim</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Current Policy</td>
+                            <td> <input type="text" name="" id=""> </td>
+                            <td><input type="text" name="" id=""> </td></td>
+                            <td><input type="text" name="" id=""> </td></td>
+                            <td><input type="text" name="" id=""> </td></td>
+                            <td><input type="text" name="" id=""> </td></td>
+                        </tr>
+                        <tr>
+                            <td>1 <sup>st</sup> Previous Policy</td>
+                            <td><input type="text" name="" id=""> </td></td>
+                            <td><input type="text" name="" id=""> </td></td>
+                            <td><input type="text" name="" id=""> </td></td>
+                            <td><input type="text" name="" id=""> </td></td>
+                            <td><input type="text" name="" id=""> </td></td>
+                        </tr>
+                        <tr>
+                            <td>2 <sup>nd</sup>Previous Policy</td>
+                            <td><input type="text" name="" id=""> </td></td>
+                            <td><input type="text" name="" id=""> </td></td>
+                            <td><input type="text" name="" id=""> </td></td>
+                            <td><input type="text" name="" id=""> </td></td>
+                            <td><input type="text" name="" id=""> </td></td>
+                        </tr>
+                        <tr>
+                            <td>3 <sup>rd</sup> Previous Policy</td>
+                            <td><input type="text" name="" id=""> </td></td>
+                            <td><input type="text" name="" id=""> </td></td>
+                            <td><input type="text" name="" id=""> </td></td>
+                            <td><input type="text" name="" id=""> </td></td>
+                            <td><input type="text" name="" id=""> </td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+        </fieldset>
+    </div>
+    <!-- NCB Claimed End -->
+
+    <!-- Undertaking -->
+    <h2>  Undertaking  </h2>
+    <div>
+        <p>        
+            1. I/We the above named, do hereby, to the best of my/our knowledge and belief, warrant the truth of the foregoing statements in every respect and agree that if
+            I/We have made any false or fraudulent statement or there be any suppression or concealment of facts, the claim shall be forfeited.
+            2. I/We have received a list of documents with this claim Form and will provide such complete documents along with the signed Claim Form and have understood
+            all the requirement to be fulfilled for administration of this claim. The Company shall not be held responsible for any delay in settlement of claim due to nonfulfillment
+            of requirements including the submission of documents as required.
+            3. I/We agree to provide any additional information/documents to the Company, if and when required.
+            4. I/We hereby understand, agree and submit that No Claim Bonus (NCB) allowed to me/us under the Policy for which the Claim is being preferred/lodged is
+            subject to the fact that the own damage claim experience for the insured vehicle or my/our earlier insured vehicle (in case of transfer of No Claim Bonus from
+            earlier insured vehicle) in previous year policy(s) was NIL. Accordingly I/We once again submit/undertake that the “No Claim Bonus” (NCB) allowed under the
+            current year Policy for the Insured Vehicle for which the Claim is preferred is based on the above NIL Claim history. Further I/We undertake and submit that in
+            case the basis of availing the No Claim Bonus (NCB) under the current policy is incorrect, then the company may at its discretion impose suitable damages on the
+            preferred claim which may include forfeiture of all benefits on own damage section of policy.
+        </p>
+    </div>
+    <div class="documents">
+        <table>
+            <tr>
+                <td colspan="3"><h1>List of Documents Required for Claim Settlement</h1></td>
+                
+            </tr>
+            <tr>
+                <td colspan="3"><p>(To be submitted to the Surveyor/Customer Service Centre)</p></td>
+
+                
+            </tr>
+            <tr>
+                <td colspan="2"><b> Accident Claim</b></td>
+                <td><b>Additional Documents for Theft Claims</b></td>
+                
+            </tr>
+            <tr>
+                <td id="sno">1</td>
+                <td>Proof of insurance-Policy/Cover note copy</td>
+                <td>Original Policy document</td>
+            </tr>
+            <tr>
+                <td id="sno">2</td>
+                <td>Copy of Registration Book, Tax Receipt[Please furnish original
+                        for Verification]</td>
+                <td>Original Registration Book/Certificate and Tax payment receipt</td>
+            </tr>
+            <tr>
+                <td id="sno">3</td>
+                <td>Copy of Motor Driving License [With original] of the person
+                        driving the vehicle at the time of accident</td>
+                <td>Previous insurance details - Policy No, insuring Office/Company,
+                        period of insurance</td>
+            </tr>
+            <tr>
+                <td id="sno">4</td>
+                <td>Police Panchanama/FIR(In case of Third Property
+                        damage/Death/Body Injury)</td>
+                <td>All the sets of Key, Service Booklet, Original Purchase Invoice and
+                        Non Repossession Letter from Financier</td>
+            </tr>
+            <tr>
+                <td id="sno">5</td>
+                <td>Estimate for repairs from the repairer where the vehicle is to be
+                        repaired</td>
+                <td>Police Panchanama/FIR and Final Investigation Report</td>
+            </tr>
+            <tr>
+                <td id="sno">6</td>
+                <td>Repair Bill and payment receipts after the job is completed</td>
+                <td>Acknowledged copy of letter addressed to RTO intimating theft and
+                        making vehicle “NON-USE”</td>
+            </tr>
+            <tr>
+                <td id="sno">7</td>
+                <td>Claims Discharge Cum Satisfaction Voucher Signed across a
+                        Revenue Stamp</td>
+                <td>Form 28, 29 and 30 signed by the insured and Form 35 signed by the
+                        Financer, as the case may be, undated and blank</td>
+            </tr>
+            <tr>
+                <td id="sno">8</td>
+                <td>Documents as required by AML Guidelines</td>
+                <td>Letter of Subrogation</td>
+            </tr>
+            <tr>
+                <td id="sno">9</td>
+                <td>Permit, Fitness and Load Challan (in case of Commercial
+                        Vehicle)</td>
+                <td>Consent towards agreed claim settlement value from you and
+                        financer</td>
+            </tr>
+            <tr>
+                <td id="sno">10</td>
+                <td></td>
+                <td>NOC of Financer if claim is to be settled in your favour</td>
+            </tr>
+            <tr>
+                <td id="sno">11</td>
+                <td></td>
+                <td>Blank and undated “Vakalatnama”</td>
+            </tr>
+            <tr>
+                <td id="sno">12</td>
+                <td></td>
+                <td>Documents as required by AML Guidelines</td>
+            </tr>
+            <tr>
+                    <td id="sno" colspan="3"> <b>Additional documents in specific claims shall be intimated separately</b></td>
+                    
+            </tr>       
+        </table>
+    </div>
+    
+    <!-- Mandate Form for Electronic Transfer of Claim Payments -->
+    <div class="claim">
+        <fieldset>
+            <legend> <h2>Mandate Form for Electronic Transfer of Claim Payments</h2></legend>
+            <form action="">
+                <label for="">Insured Name:</label><input type="text" name=" insured" id="">
+                <label for="">Vehicle Registration No:</label><input type="text" name="vehicle_reg" id="">
+
+                <div class="bank details">
+                    <span> <h4>Bank Details</span></h4></span>   <br> 
+                    <div class="bank_1">
+                        <label for="">Bank Name:</label><input type="text" name="bank_name" id="">
+                        <label for="">Bank Branch:</label><input type="text" name="bank_branch" id=""><br>
+                        <label for="">Account Type:</label><input type="radio" name="account" id="">Saving Account 
+                                                        <input type="radio" name="account" id="">Regular Savings
+                                                        <input type="radio" name="account" id="">Current Account 
+                                                        <input type="radio" name="account" id="">Recurring Deposit Account
+                                                        <input type="radio" name="account" id="">Fixed Deposit Account 
+                                                        <input type="radio" name="account" id="">DEMAT Account
+                                                        <input type="radio" name="account" id="">NRI Accounts <br>
+                        <label for="">IFSC Code:</label><input type="text" name="IFSCCode" id=""> 
+                        <label for="">MICR Code:</label><input type="text" name="MICRCode" id="">  
+                        <label for="">Account Number:</label><input type="text" name="ac_no" id="">
+                        <label for="">Bank Address:</label><input type="text" name="bank_address" id="">
+                    </div>
+                    <!--cheque-->
+                    <div class="cheque">
+                        <h4>Please also attach one Blank Cancelled Cheque for NEFT/RTGS Payment</h4>
+                        <table class="cheque_1">
+                            <tr>
+                                <td class="insured">
+                                    <label for="" id="">Insured Name:</label>
+                                </td>
+                                <td rowspan="2">
+                                    <label for="" id="sign">(Signature/Thumb impression of Insured)</label>
+                                </td>
+                            </tr>
+                            <tr >
+                               <td class="date"><label for="" id="">Date & Place:</label></td>                                                              
+                            </tr>
+                        </table>
+                    </div>
+                    <!--cheque End -->
+                </div>                
+            </form>
+        </fieldset>
+    </div>
+    <!-- Mandate Form for Electronic Transfer of Claim Payments End -->
+
+    <!-- CLAIM DISCHARGE -->
+    <div class="CLAIMDISCHARGE">
+        <h3>CLAIM DISCHARGE CUM SATISFACTION VOUCHER</h3>
+        <table class="vehicle discharge">
+            <tr>
+                 <label for="">Insured Name:</label> <input type="text" name="" id="">
+                
+            </tr>
+            <tr> <label for="">Vehicle Registration No:</label><input type="text" name="" id="">
+
+            </tr>
+            <tr>
+                <label for="">Discharge Date:</label><input type="date" name="" id="">
+            </tr>
+        </table>
+        <p>
+                My vehicle number <input type="text" name="" id=""> having been repaired to my complete satisfaction, I am henceforth taking delivery of the
+                same and authorise my insurer IFFCO TOKIO GENERAL INSURANCE COMPANY to make payment of Rs <input type="text" name="" id="">
+                to the <input type="text" name="" id=""> garage in respect of my aforementioned vehicle. I also confirm having paid Rs<input type="text" name="" id="">in
+                lieu of depreciation, policy excess and any additional work carried out at the garage.
+                I agree that this payment being made to the aforementioned garage is in full and final settlement of my claim.
+                I/we hereby voluntarily give discharge receipt to the Company in Full & Final settlement of all my/our claims present or future
+                arising directly/indirectly in respect of said loss/accident. I/We hereby also subrogate all my/our rights and remedies to the
+                Company in respect of the above loss/damages.
+        </p>
+        <table class="claim">
+            <tr>
+                <td class="sign"></td>
+                <td class="stamp"></td>
+            </tr>
+            <tr>
+                <td><b>Signature/Thumb impression of Insured</b></td>
+                <td><b>Signature and Stamp of Garage</b></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- CLAIM DISCHARGE -->
+</body>
+</html>
